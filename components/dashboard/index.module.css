@@ -1,0 +1,6 @@
+.wCollapsed{
+    width: calc(100vw - 4rem) !important;
+}
+.wNotCollapsed{
+    width: calc(100vw - 15rem) !important;
+}
