@@ -1,5 +1,5 @@
 import AlertsChart from "./AlertsChart";
-import DatePicker from "./DatePicker";
+import DatePicker from "../DatePicker";
 
 export default function AlertVisual() {
   return (

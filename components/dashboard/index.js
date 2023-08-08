@@ -3,7 +3,7 @@ import { SidebarContext } from '@/contexts/SidebarContext'
 import React, { useContext } from 'react'
 import style from './index.module.css'
 import AlertSidebar from './AlertSidebar';
-import AlertVisual from './AlertVisual';
+import AlertVisual from './Alert Components/AlertVisual';
 import LiveData from './LiveData';
 
 export default function Dashboard() {
