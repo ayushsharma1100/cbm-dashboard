@@ -1,7 +1,6 @@
 "use client"
 import { SidebarContext } from '@/contexts/SidebarContext';
 import { useContext } from 'react';
-import style from './sidebar.module.css'
 
 const Sidebar = () => {
   let { isCollapsed, toggleSidebar } = useContext(SidebarContext);
@@ -40,9 +39,9 @@ const Sidebar = () => {
   ]
 
   return (
-    <div className={`${isCollapsed ? 'w-16' : 'w-60'} h-full border-r-2 border-slate-200 transition-all`}>
+    <div className={`${isCollapsed ? 'w-16' : 'w-52'} h-full border-r-2 border-slate-200 transition-all`}>
       {/* Sidebar content */}
-      <div className={`py-24 fixed ${!isCollapsed && style.sidebarWidthHover}`}>
+      <div className={`py-24 fixed ${!isCollapsed && 'w-52'}`}>
         <div className={`divide-y divide-gray-700 ${isCollapsed && 'ms-3'}`}>
           <ul className="pt-2 pb-4 space-y-8 text-sm">
             {items.map(item => {

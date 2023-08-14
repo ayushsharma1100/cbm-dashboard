@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
@@ -25,7 +26,7 @@ export const data = {
 };
 
 export default function AlertsChart() {
-  return <div className='w-3/4'>
+  return <div className='h-28'>
     <Doughnut data={data} options={{
       responsive: true,
       maintainAspectRatio: false,
@@ -33,7 +34,7 @@ export default function AlertsChart() {
           legend: {
             labels: {
               font: {
-                size: 10
+                size: 8
               }
             }
           }
